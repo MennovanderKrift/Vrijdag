@@ -35,6 +35,7 @@ padding: 20px;
 #content img{
 margin: 5px;
 height: 150px;
+max-width: 98%;
 }
 
 .clear{
