@@ -4,6 +4,10 @@
     <title>Vrijdag's super gave en ultra deluxe wedstrijd statistieken!</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
+    <script src="tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({selector:'textarea'});
+    </script>
 </head>
 
 <body>
@@ -24,14 +28,12 @@
         <hr>
     </nav>
 
-    <div id="content">
-        <h1> Pagina Naam </h1>
-        <hr>
-        <p> Pagina Content zoals paragraven, stats en afbeeldingen enzo </p>
-        <p> Dit gedeelte zou b.v. ook kunnen worden opgevuld met de laatste nieuwtjes.
-            Blessures van spelers, wie de laatste paar wedstrijden hebben gewonnen etc.</p>
-        <img src="assets/img/radeloos-college.png" />
-        <img src="assets/img/angry-unicorn.png" />
+    <div id="nieuws">
+        <form method="post" action="toegevoegd.php">
+            <h2 style="text-align: left;">Title:</h2> <br><input class="title" type="text" name="title" id="title" placeholder="Verzin een leuke title :)"/><br>
+            <h2 style="text-align: left">Bericht:</h2> <br><textarea style="width: 600px; height: 400px" name="bericht" placeholder="Het bericht bijv. Rick heeft een goal gemaakt"></textarea><br>
+            <input class="add" type="submit" name="Submit" value="Voeg Bericht toe"/>
+        </form>
     </div>
     <div class="clear">
         <span class="copyright">Copyright &copy; Unicorn B.V.</span>

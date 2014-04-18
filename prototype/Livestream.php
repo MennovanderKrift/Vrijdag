@@ -13,7 +13,7 @@
         <a href ="index.php"><img src="assets/img/vrijdag-logo.png" alt="Vrijdag logo" /></a>
         <ul>
             <li><a href="livestream.php">Livestream</a></li>
-            <li><a href="#">Laatste Nieuws</a></li>
+            <li><a href="nieuws.php">Laatste Nieuws</a></li>
             <li><a href="#">Resultaten</a></li>
             <li><a href="#">Topscorders</a></li>
             <li><a href="#">Register</a></li>

@@ -82,3 +82,35 @@ text-align: center;
     width: 890px;
     margin: 50px auto;
 }
+
+#nieuws{
+    width: 890px;
+    margin: 50px auto;
+}
+#topic{
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.59), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.59), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.59), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+#nieuws h2 {
+    text-align: center;
+}
+
+.title{
+    /*border: 5px;*/
+    border-radius: 4px;
+    padding: 2px;
+    width: 250px;
+    color: purple;
+    background-color: chartreuse;
+    text-align: center;
+}
+.add {
+    border-radius: 4px;
+    padding: 2px;
+    width: 150px;
+    text-align: center;
+}

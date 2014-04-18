@@ -1,3 +1,6 @@
+<?php
+include 'assets/include/functies.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,14 +27,8 @@
         <hr>
     </nav>
 
-    <div id="content">
-        <h1> Pagina Naam </h1>
-        <hr>
-        <p> Pagina Content zoals paragraven, stats en afbeeldingen enzo </p>
-        <p> Dit gedeelte zou b.v. ook kunnen worden opgevuld met de laatste nieuwtjes.
-            Blessures van spelers, wie de laatste paar wedstrijden hebben gewonnen etc.</p>
-        <img src="assets/img/radeloos-college.png" />
-        <img src="assets/img/angry-unicorn.png" />
+    <div id="nieuws">
+    <?php LatestNieuws(); ?>
     </div>
     <div class="clear">
         <span class="copyright">Copyright &copy; Unicorn B.V.</span>
