@@ -77,3 +77,8 @@ span.copyright{
 text-align: center;
     float: right;
 }
+
+#livestream{
+    width: 890px;
+    margin: 50px auto;
+}
