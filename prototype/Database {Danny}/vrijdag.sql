@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2014 at 10:11 PM
+-- Generation Time: Apr 22, 2014 at 04:38 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `poulewedstrijden` (
   `goals_slot_2` int(10) NOT NULL,
   `winnaar` varchar(50) NOT NULL,
   `gelijk` tinyint(1) NOT NULL,
+  `nowplaying` int(11) NOT NULL,
   PRIMARY KEY (`wedstrijdnr`),
   KEY `slot_2` (`slot_2`),
   KEY `winnaar` (`winnaar`),
@@ -68,27 +69,27 @@ CREATE TABLE IF NOT EXISTS `poulewedstrijden` (
 -- Dumping data for table `poulewedstrijden`
 --
 
-INSERT INTO `poulewedstrijden` (`wedstrijdnr`, `slot_1`, `slot_2`, `goals_slot_1`, `goals_slot_2`, `winnaar`, `gelijk`) VALUES
-(88, 'Team 1', 'Team 2', 0, 0, '', 0),
-(89, 'Team 6', 'Team 7', 2, 0, 'Team 6', 0),
-(90, 'Team 4', 'Team 5', 0, 0, '', 0),
-(91, 'Team 9', 'Team 10', 0, 0, '', 0),
-(92, 'Team 2', 'Team 3', 0, 0, '', 0),
-(93, 'Team 7', 'Team 8', 0, 0, '', 0),
-(94, 'Team 1', 'Team 4', 0, 0, '', 0),
-(95, 'Team 6', 'Team 9', 0, 0, '', 0),
-(96, 'Team 3', 'Team 5', 0, 0, '', 0),
-(97, 'Team 8', 'Team 10', 0, 0, '', 0),
-(98, 'Team 2', 'Team 4', 0, 0, '', 0),
-(99, 'Team 7', 'Team 9', 0, 0, '', 0),
-(100, 'Team 1', 'Team 3', 0, 0, '', 0),
-(101, 'Team 6', 'Team 8', 0, 0, '', 0),
-(102, 'Team 2', 'Team 5', 0, 0, '', 0),
-(103, 'Team 7', 'Team 10', 0, 0, '', 0),
-(104, 'Team 3', 'Team 4', 0, 0, '', 0),
-(105, 'Team 8', 'Team 9', 0, 0, '', 0),
-(106, 'Team 1', 'Team 5', 0, 0, '', 0),
-(107, 'Team 6', 'Team 10', 0, 0, '', 0);
+INSERT INTO `poulewedstrijden` (`wedstrijdnr`, `slot_1`, `slot_2`, `goals_slot_1`, `goals_slot_2`, `winnaar`, `gelijk`, `nowplaying`) VALUES
+(1, 'Team 1', 'Team 2', 0, 0, '', 0, 0),
+(2, 'Team 6', 'Team 7', 2, 0, 'Team 6', 0, 1),
+(3, 'Team 4', 'Team 5', 0, 0, '', 0, 0),
+(4, 'Team 9', 'Team 10', 0, 0, '', 0, 0),
+(5, 'Team 2', 'Team 3', 0, 0, '', 0, 0),
+(6, 'Team 7', 'Team 8', 0, 0, '', 0, 0),
+(7, 'Team 1', 'Team 4', 0, 0, '', 0, 0),
+(8, 'Team 6', 'Team 9', 0, 0, '', 0, 0),
+(9, 'Team 3', 'Team 5', 0, 0, '', 0, 0),
+(10, 'Team 8', 'Team 10', 0, 0, '', 0, 0),
+(11, 'Team 2', 'Team 4', 0, 0, '', 0, 0),
+(12, 'Team 7', 'Team 9', 0, 0, '', 0, 0),
+(13, 'Team 1', 'Team 3', 0, 0, '', 0, 0),
+(14, 'Team 6', 'Team 8', 0, 0, '', 0, 0),
+(15, 'Team 2', 'Team 5', 0, 0, '', 0, 0),
+(16, 'Team 7', 'Team 10', 0, 0, '', 0, 0),
+(17, 'Team 3', 'Team 4', 0, 0, '', 0, 0),
+(18, 'Team 8', 'Team 9', 0, 0, '', 0, 0),
+(19, 'Team 1', 'Team 5', 0, 0, '', 0, 0),
+(20, 'Team 6', 'Team 10', 0, 0, '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -182,46 +183,46 @@ CREATE TABLE IF NOT EXISTS `team-poulewedstrijd` (
 --
 
 INSERT INTO `team-poulewedstrijd` (`team_id`, `poulewedstrijd_id`) VALUES
-(11, 88),
-(12, 88),
-(16, 89),
-(17, 89),
-(14, 90),
-(15, 90),
-(19, 91),
-(20, 91),
-(12, 92),
-(13, 92),
-(17, 93),
-(18, 93),
-(11, 94),
-(14, 94),
-(16, 95),
-(19, 95),
-(13, 96),
-(15, 96),
-(18, 97),
-(20, 97),
-(12, 98),
-(14, 98),
-(17, 99),
-(19, 99),
-(11, 100),
-(13, 100),
-(16, 101),
-(18, 101),
-(12, 102),
-(15, 102),
-(17, 103),
-(20, 103),
-(13, 104),
-(14, 104),
-(18, 105),
-(19, 105),
-(11, 106),
-(15, 106),
-(16, 107),
-(20, 107);
+(11, 1),
+(12, 1),
+(16, 2),
+(17, 2),
+(14, 3),
+(15, 3),
+(19, 4),
+(20, 4),
+(12, 5),
+(13, 5),
+(17, 6),
+(18, 6),
+(11, 7),
+(14, 7),
+(16, 8),
+(19, 8),
+(13, 9),
+(15, 9),
+(18, 10),
+(20, 10),
+(12, 11),
+(14, 11),
+(17, 12),
+(19, 12),
+(11, 13),
+(13, 13),
+(16, 14),
+(18, 14),
+(12, 15),
+(15, 15),
+(17, 16),
+(20, 16),
+(13, 17),
+(14, 17),
+(18, 18),
+(19, 18),
+(11, 19),
+(15, 19),
+(16, 20),
+(20, 20);
 
 -- --------------------------------------------------------
 
