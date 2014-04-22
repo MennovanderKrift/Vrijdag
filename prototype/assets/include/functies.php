@@ -33,4 +33,14 @@ function delete(){
     }
     $database->close();
 }
+
+function nowPlaying() {
+    include 'config.php';
+    if($query = $database->query("SELECT * FROM poulewedstrijden WHERE nowplaying = 1")){
+        while($result = $query->fetch_assoc()){
+            echo $result['slot_1'] . ' VS ' . $result['slot_2'] . '<br>';
+            echo $result['goals_slot_1'] . ' - ' . $result['goals_slot_2'];
+        }
+    }
+}
 ?>
