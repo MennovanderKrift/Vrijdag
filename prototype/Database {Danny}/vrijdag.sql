@@ -250,16 +250,16 @@ CREATE TABLE IF NOT EXISTS `teams` (
 --
 
 INSERT INTO `teams` (`id`, `naam`, `doelp_voor`, `doelp_tegen`, `gewonnen`, `verloren`, `gelijk`, `poule`, `punten`, `totaal_punten`) VALUES
-(11, 'Team 1', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
-(12, 'Team 2', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
-(13, 'Team 3', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
-(14, 'Team 4', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
-(15, 'Team 5', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
-(16, 'Team 6', NULL, NULL, 1, NULL, 0, 'B', 3, 3),
-(17, 'Team 7', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
-(18, 'Team 8', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
-(19, 'Team 9', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
-(20, 'Team 10', NULL, NULL, 0, NULL, 0, 'B', 0, 0);
+(NULL, 'Team 1', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
+(NULL, 'Team 2', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
+(NULL, 'Team 3', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
+(NULL, 'Team 4', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
+(NULL, 'Team 5', NULL, NULL, 0, NULL, 0, 'A', 0, 0),
+(NULL, 'Team 6', NULL, NULL, 1, NULL, 0, 'B', 3, 3),
+(NULL, 'Team 7', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
+(NULL, 'Team 8', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
+(NULL, 'Team 9', NULL, NULL, 0, NULL, 0, 'B', 0, 0),
+(NULL, 'Team 10', NULL, NULL, 0, NULL, 0, 'B', 0, 0);
 
 -- --------------------------------------------------------
 
