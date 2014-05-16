@@ -16,12 +16,12 @@ include 'assets/include/functies.php';
         <ul>
             <li><a href="livestream.php">Livestream</a></li>
             <li><a href="nieuws.php">Laatste Nieuws</a></li>
-            <li><a href="#">Resultaten</a></li>
-            <li><a href="#">Topscorders</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="Resultaten.php">Resultaten</a></li>
+            <li><a href="Topscorders.php">Topscorders</a></li>
+            <li><a href="Register.php">Register</a></li>
             <!--<li><a href="#">Login</a></li>-->
-            <li><a href="#">Score</a></li>
-            <li><a href="#">APO</a> </li>
+            <li><a href="Score.php">Score</a></li>
+            <li><a href="APO.php">APO</a> </li>
         </ul>
         <div class="clear"></div>
         <hr>
