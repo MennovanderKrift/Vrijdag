@@ -45,7 +45,7 @@ require 'assets/include/config.php';
             </tr>
             </thead>
             <tbody>
-            <?p hp
+            <?php
             while ($row = mysqli_fetch_assoc($query) )
             {
                 echo '<tr>';
