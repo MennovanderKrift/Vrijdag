@@ -16,7 +16,7 @@ include 'assets/include/functies.php';
         <ul>
             <li><a href="livestream.php">Livestream</a></li>
             <li><a href="nieuws.php">Laatste Nieuws</a></li>
-            <li><a href="Resultaten.php">Resultaten</a></li>
+            <li><a href="resultaten.php">Resultaten</a></li>
             <li><a href="Topscorders.php">Topscorders</a></li>
             <li><a href="Register.php">Register</a></li>
             <!--<li><a href="#">Login</a></li>-->
