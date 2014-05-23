@@ -38,4 +38,3 @@ $(document).ajaxStart(function() {
 $(document).ajaxStop(function() {
     $('#loading').hide()
 });
-
