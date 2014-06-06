@@ -1,0 +1,29 @@
+header{
+background-color: #d4effc;
+height: 50px;
+}
+
+header ul{
+list-style-type: none;
+width: 1170px;
+margin: 0 auto;
+}
+
+header ul li{
+float: left;
+line-height: 10px;
+padding: 10px;
+margin-top: 10px;
+}
+
+header ul li a{
+color: #666666;
+font-weight: bold;
+border: 1px solid #ffffff;
+padding: 10px;
+}
+
+header ul li a:hover{
+color: #000;
+text-decoration: none;
+}
