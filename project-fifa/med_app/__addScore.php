@@ -13,12 +13,12 @@ if ( isset($_POST['update']) )
     $sql = "UPDATE poulewedstrijden SET goals_slot_1 = '$score_slot_1', goals_slot_2 = '$score_slot_2' WHERE wedstrijdnr = '$wedstrijdnr'"; 
     $query = mysqli_query($con, $sql);
 
-    header('location: addScore.php?id='.$wedstrijdnr);
+    header('location: addscore.php?id='.$wedstrijdnr);
     exit;
 }
 
 // update final score
-if ( isset($_POST['addScore']) && (!empty($_POST['winnaar']) OR !empty($_POST['gelijk'])) && isset($_POST['submit']) ) {
+if ( isset($_POST['addscore']) && (!empty($_POST['winnaar']) OR !empty($_POST['gelijk'])) && isset($_POST['submit']) ) {
         
         $score_slot_1 = mysqli_real_escape_string($con, trim($_POST['score1']));
         $score_slot_2 = mysqli_real_escape_string($con, trim($_POST['score2']));

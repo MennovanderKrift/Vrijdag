@@ -91,7 +91,7 @@ function getPlayers($con) {
 		$row = mysqli_fetch_assoc($query);
 	?>
 	<div class="score col-md-8">
-	    <form role="form" action="__addScore.php?id=<?php echo $id?>" METHOD="POST">
+	    <form role="form" action="__addscore.php?id=<?php echo $id?>" METHOD="POST">
 			<legend>Eindscore</legend>
 			<div class="form-group">
 		        <label class="labelBig" for="score1"  id="score1"><?php echo $row['slot_1']; ?></label>
@@ -117,7 +117,7 @@ function getPlayers($con) {
 		    	<input type="checkbox" name="gelijk" id="gelijk">	
 			</div>
 
-	    	<input type="hidden" name="addScore" value="addscore">
+	    	<input type="hidden" name="addscore" value="addscore">
 			<input type="submit" name="submit" value="Score vastleggen">
 	    </form>    
     </div>
