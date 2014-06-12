@@ -1,8 +1,12 @@
-Bugs rapporteren en in het excel document zetten straks naar rick sturen.
+X	Bugs rapporteren en in het Microsoft Excel document zetten straks naar rick sturen.*
 
-kwartfinales gaan eruit, er wordt gelijk naar de halve finales gegaan.
-de halve finales worden gevuld met plaats 1 en 2 van beide poules.
+X	kwartfinales gaan eruit, er wordt gelijk naar de halve finales gegaan.
+X	de halve finales worden gevuld met plaats 1 en 2 van beide poules.
 
 Dit moet automatisch gebeuren. dus hier moet een query voor geschreven worden...
 
 + Livestream moet concreet in orde gemaakt worden.
+
+
+$sql = SELECT * FROM teams WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 0,1 AND
+SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,1;

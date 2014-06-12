@@ -1,4 +1,9 @@
 <!doctype html>
+<?php
+include_once 'config/connect.php';
+$sql = "SELECT * FROM teams WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 2 AND
+SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
+ ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -12,8 +17,7 @@
 			<center><h1 style="color: #fff; font-size: 40px; margin-left: 350px;">Finale plaatsen</h1></center>
       <br>
 		</header>
-
-
+		
 <div style="margin-left:20px; margin-right: 20px;"class="panel panel-info">
   <div class="panel-heading">
     <center><h3 style="font-size: 23px;" class="panel-title">Halve Finale</h3></center>
@@ -22,15 +26,41 @@
     <table class="table table-striped table-hover ">
     <tr class="info">
       <td><h4>1</h4></td>
-      <td><h4>Winnaar kwartfinale wedstrijd 1</h4></td>
+      <td><h4><?php 
+	  $query = mysqli_query($con, "SELECT * FROM teams");
+		while ($row = mysqli_fetch_assoc($query))
+		{
+			echo '<tr>';
+			echo '<td>' . $row['naam'] . '</td>';
+			echo '</tr>';
+		}?>
+	</h4></td>
       <td><h4>VS</h4></td>
-      <td><h4>Winnaar kwartfinale wedstrijd 3</h4></td>
+      <td><h4><?php 	  $query = mysqli_query($con, "SELECT * FROM teams");
+		while ($row = mysqli_fetch_assoc($query))
+		{
+			echo '<tr>';
+			echo '<td>' . $row['naam'] . '</td>';
+			echo '</tr>';
+		}?></h4></td>
     </tr>
         <tr class="info">
       <td><h4>2</h4></td>
-      <td><h4>Winnaar kwartfinale wedstrijd 2</h4></td>
+      <td><h4><?php $query = mysqli_query($con, "SELECT * FROM teams");
+		while ($row = mysqli_fetch_assoc($query))
+		{
+			echo '<tr>';
+			echo '<td>' . $row['naam'] . '</td>';
+			echo '</tr>';
+		}?></h4></td>
       <td><h4>VS</h4></td>
-      <td><h4>Winnaar kwartfinale wedstrijd 4</h4></td>
+      <td><h4><?php $query = mysqli_query($con, "SELECT * FROM teams");
+		while ($row = mysqli_fetch_assoc($query))
+		{
+			echo '<tr>';
+			echo '<td>' . $row['naam'] . '</td>';
+			echo '</tr>';
+		}?></h4></td>
     </tr>
   </table>
   </div>
