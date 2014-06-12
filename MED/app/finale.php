@@ -1,8 +1,8 @@
 <!doctype html>
 <?php
 include_once 'config/connect.php';
-$sql = "SELECT * FROM teams WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 2 AND
-SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
+$sql = "SELECT naam FROM teams WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 0,2 AND
+SELECT naam FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
  ?>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@ SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
     <tr class="info">
       <td><h4>1</h4></td>
       <td><h4><?php 
-	  $query = mysqli_query($con, "SELECT * FROM teams");
+	  $query = mysqli_query($con, "SELECT naam FROM teams WHERE poule='A' ORDER BY totaal_punten DESC LIMIT 0,1");
 		while ($row = mysqli_fetch_assoc($query))
 		{
 			echo '<tr>';
@@ -36,7 +36,8 @@ SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
 		}?>
 	</h4></td>
       <td><h4>VS</h4></td>
-      <td><h4><?php 	  $query = mysqli_query($con, "SELECT * FROM teams");
+      <td><h4><?php
+      $query = mysqli_query($con, "SELECT naam FROM teams WHERE poule='B' ORDER BY totaal_punten DESC LIMIT 0,1");
 		while ($row = mysqli_fetch_assoc($query))
 		{
 			echo '<tr>';
@@ -46,7 +47,8 @@ SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
     </tr>
         <tr class="info">
       <td><h4>2</h4></td>
-      <td><h4><?php $query = mysqli_query($con, "SELECT * FROM teams");
+      <td><h4><?php
+      $query = mysqli_query($con, "SELECT naam FROM teams WHERE poule='A' ORDER BY totaal_punten DESC LIMIT 1,1");
 		while ($row = mysqli_fetch_assoc($query))
 		{
 			echo '<tr>';
@@ -54,7 +56,8 @@ SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
 			echo '</tr>';
 		}?></h4></td>
       <td><h4>VS</h4></td>
-      <td><h4><?php $query = mysqli_query($con, "SELECT * FROM teams");
+      <td><h4><?php
+      $query = mysqli_query($con, "SELECT naam FROM teams WHERE poule='B' ORDER BY totaal_punten DESC LIMIT 1,1");
 		while ($row = mysqli_fetch_assoc($query))
 		{
 			echo '<tr>';
