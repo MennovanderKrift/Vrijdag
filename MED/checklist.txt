@@ -1,0 +1,8 @@
+Bugs rapporteren en in het excell document zetten straks naar rick sturen.
+
+kwartfinales gaan eruit, er wordt gelijk naar de halve finales gegaan.
+de halve finales worden gevuld met plaats 1 en 2 van beide poules.
+
+Dit moet automatisch gebeuren. dus hier moet een query voor geschreven worden...
+
++ Livestream moet concreet in orde gemaakt worden.
