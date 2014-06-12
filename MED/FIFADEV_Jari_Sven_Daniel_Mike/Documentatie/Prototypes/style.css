@@ -1,0 +1,60 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper {
+	width:1280px;
+	margin:auto;
+	border:1px solid #000000;
+}
+
+#innerwrapper {
+	width:1270px;
+	margin:auto;
+	border:1px solid #000000;
+	height:800px;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+h1 {
+	text-align:center;
+}
+
+.grid-8 {
+	width:400px;
+	float:left;
+	display:inline-block;
+	text-align:center;
+}
+
+.grid-8 h2 {
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+form {
+	text-align:center;
+	margin-top:20px;
+}
+
+form label {
+	margin-right:80px;
+}
+
+.grid-8 ul li {
+	text-align:center;
+	list-style-type:none;
+	margin-right:100px;
+}
+
+.grid-8 ul {
+	margin-top:20px;
+}
+
+select {
+	width:120px;
+	margin-bottom:10px;
+}
