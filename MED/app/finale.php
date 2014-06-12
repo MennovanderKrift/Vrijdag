@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
 include_once 'config/connect.php';
-$sql = "SELECT * FROM teams WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 2 AND
+$sql = "SELECT * FROM naam WHERE poule = 'A' ORDER BY totaal_punten DESC LIMIT 2 AND
 SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
  ?>
 <html lang="en">
@@ -27,7 +27,7 @@ SELECT * FROM teams WHERE poule = 'B' ORDER BY totaal_punten DESC LIMIT 0,2";
     <tr class="info">
       <td><h4>1</h4></td>
       <td><h4><?php 
-	  $query = mysqli_query($con, "SELECT * FROM teams");
+	  $query = mysqli_query($con, "SELECT naam FROM teams");
 		while ($row = mysqli_fetch_assoc($query))
 		{
 			echo '<tr>';
